@@ -1,0 +1,64 @@
+.glass-effect {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.counter-box {
+  width: 260px;
+  padding: 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.counter-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255,255,255,0.3);
+}
+
+.counter-heading {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.count-display {
+  font-size: 3rem;
+  font-weight: 600;
+  margin: 20px 0;
+  color: #fff;
+  text-shadow: 0 0 10px rgba(255,255,255,0.6);
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn {
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: #fff;
+}
+
+.btn.plus {
+  background: linear-gradient(135deg, #00ff94, #00b3ff);
+}
+
+.btn.minus {
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 12px rgba(255,255,255,0.5);
+}
